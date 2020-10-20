@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		let tijdschrift = prompt("Welk tijdschrift wil u kopen?", "Goed Gevoel");
+		let kostprijs = prompt("De prijs van 1 exemplaar is ", 9.99);
+		let aantal = prompt("Hoeveel exemplaren wenst u te kopen", 2);
+
+
+		document.write(`<p>U wenst het tijdschrift ${tijdschrift} te kopen</p>`)
+		document.write(`<p>De kostprijs van 1 exemplaar is ${kostprijs} eur.</p>`)
+		document.write(`<p>U wil ${aantal} exemplaren kopen</p>`)
+		document.write(`<p>De totale prijs voor deze ${aantal} exemplaren van ${tijdschrift} is ${kostprijs*2} eur.</p>`);
+
+	</script>
+
+
+</body>
+</html>
