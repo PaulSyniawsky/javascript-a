@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	let scores = [];
+	let namen = new Array();
+
+	scores[0]= 39;
+	scores[1]= 40;
+	scores[2]= 100;
+	scores[3]= 49;
+
+	let seizoenen = new Array("winter, lente, zomer, herfst");
+
+	let scriptingtalen =["javascript", "PHP"];
+
+
+	document.write(`
+		<p>${scores}</p>
+		<p>${seizoenen}</p>
+		<p>${scriptingtalen}</p>
+		`);
+
+
+	let voornamen =["Jan", "Piet", "Joris"];
+	document.write(`<p>${voornamen}</p>`);
+
+	let weekdagen =["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"];
+	document.write(`<p>${weekdagen}</p>`);
+
+	document.write(`<p>${scores.length}</p>`);
+
+
+
+	let afmeting= [20, 33, 40];
+	let getal1=afmeting[0];
+	let getal2=afmeting[1];
+	document.write(`<p>${getal1} ${getal2} ${afmeting[2]}</p>`);
+
+
+	scores.push(20);
+	document.write(`<p>${scores}</p>`);
+
+	let htmlTags= ["html", "p", "div"];
+	document.write(`<p>${htmlTags}</p>`);
+	let extraTag = prompt("Kent u nog een tag?");
+	htmlTags.push(extraTag);
+	document.write(`<p>${htmlTags}</p>`);
+
+
+
+</script>
+
+
+	
+</body>
+</html>
