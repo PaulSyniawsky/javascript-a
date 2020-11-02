@@ -31,7 +31,12 @@ De maand "March" bevindt zich in de array op positie: -1
 
 let maanden = ["januari", "februari", "maart"];
 
-maanden.push("april", "mei", "juni");
+maanden[3]= "april";
+maanden[4]= "mei";
+maanden[5]="juni";
+/*maanden[maanden.length] = "april";
+maanden[maanden.length] = "mei";
+maanden[maanden.length] = "juni";*/
 maanden.push("juli");
 
 maanden.push("augustus", "september", "oktober", "november", "december");
@@ -65,13 +70,12 @@ De naam Bert bevindt zich op positie: -1
 */
 
 let namen= ["Erik", "Sofie", "Adam", "Zorro"];
-namen.sort();
+//.sort();
 document.write(`<p>De gesorteerde namen zijn: ${namen}</p>`);
 
 let keuze= prompt("Welke naam wil u zoeken?");
-let uitkomst= namen.indexOf("namen");
+let uitkomst= namen.indexOf(keuze);
 document.write(`<p>De naam ${keuze} bevindt zich op positie: ${uitkomst} </p>`);
-
 
 
 
@@ -90,12 +94,12 @@ Jouw naam genoteerd als familienaam voornaam is: Script Java
 */
 
 let vraag = prompt("Wat is je volledige naam (voornaam achternaam)");
-let naam = vraag(); 
+let naam = vraag.split(" ");
 naam.reverse();
-naam.toString();
+nieuweNaam = naam.join(" ");
 
+document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${nieuweNaam}</p>`);
 
-document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${naam.toString}</p>`);
 
 
 
