@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+	datum = new Date();
+	tijd = datum.getHours();
+	if (tijd <=7) {
+		document.write(`<p>Het is nu ${tijd} uur.<br>Goeienacht</p>`);
+		} 
+
+		else if (tijd >=7 && tijd <=11) {
+		document.write(`<p>Het is nu ${tijd} uur.<br>Goeie morgen</p>`);
+		
+	} 
+
+		else if (tijd >=11 && tijd <=18) {
+		document.write(`<p>Het is nu ${tijd} uur.<br>Goeie middag</p>`);
+	} 
+
+		else if (tijd >=18) {
+		document.write(`<p>Het is nu ${tijd} uur.<br>Goeie avond.</p>`);
+	}
+
+
+
+
+    </script>
+</body>
+
+</html>
