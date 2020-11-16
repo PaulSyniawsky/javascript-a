@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht: Graad</title>
 </head>
+
 <body>
-	<script type="text/javascript">
-		
+    <script type="text/javascript">
+    let aantal = prompt("Geef het aantal punten in met 2 cijfers");
+
+
+    if (aantal == null) {
+        document.write('U heeft geannuleerd!');
+    } else if (aantal.length == 0) {
+        document.write('U heeft niets ingegeven !');
+    } else if (isNaN(aantal)) {
+        document.write('Dit is geen nummer!');
+    } else if (aantal.length != 2) {
+        document.write('Geef de punten in met 2 cijfers!');
+
+
+    } else if (aantal >= 95) {
+        document.write(`<p>De graad is A+</p>`);
+    } else if (aantal >= 90 && aantal < 95) {
+        document.write(`<p>De graad is: A</p>`);
+    } else if (aantal >= 80 && aantal <= 89) {
+        document.write(`<p>De graad is: B</p>`);
+    } else if (aantal >= 70 && aantal <= 79) {
+        document.write(`<p>De graad is: C</p>`);
+    } else if (aantal >= 60 && aantal <= 69) {
+        document.write(`<p>De graad is: D</p>`);
+    } else if (aantal >= 50 && aantal <= 59) {
+        document.write(`<p>De graad is: E</p>`);
+    } else {
+        document.write(`<p>De graad is: F</p>`);
+    }
 
 
 
-
-
-
-
-
-
-
-
-		
-	</script>
+    </script>
 </body>
+
 </html>
