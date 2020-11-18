@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    function hoofdletters(tekst) {
+        document.write(`<p>${tekst.toUpperCase()}</p>`);
+    }
+
+    hoofdletters("javascript");
+    hoofdletters("css");
+    hoofdletters("html");
+
+
+
+
+
+    let namen = ["Jan", "Piet", "Joris"];
+
+    function toonArray(ontvangen) {
+        document.write(ontvangen)
+    }
+
+    toonArray(namen);
+
+
+
+
+
+    let mensen = ["Jan", "Piet", "Joris"];
+    let dieren = ["hond", "kat", "paard"];
+
+    function toonEersteElementUitArray(ontvangen2) {
+        document.write(`<p>${ontvangen2[0]} </p>`)
+    }
+
+    toonEersteElementUitArray(mensen);
+    toonEersteElementUitArray(dieren);
+
+
+
+
+
+    function schrijf(ontvangen3) {
+        document.write(`<p>${ontvangen3}</p>`);
+    }
+
+    schrijf("Nu moet ik niet zoveel code meer intikken");
+    schrijf("Of toch wel?");
+    schrijf("Neen, toch niet.");
+
+
+
+
+
+    let namen2 = ["Jan", "Piet", "Joris"];
+
+    function tooneersteTekenvanElkElement(ontvangen4) {
+        let lengte = ontvangen4.length;
+        document.write(`<p> Het eerste teken van</p>`);
+        for (let i = 0; i < lengte; i++) {
+            document.write(`<p> (${i + 1})  ${ontvangen4[i]} is ${ontvangen4[i].charAt(0)} </p>`);
+        }
+    }
+
+    tooneersteTekenvanElkElement(namen2);
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>

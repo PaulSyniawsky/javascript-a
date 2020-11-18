@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function product(pr1, pr2, pr3) {
+			let resultaat = pr1 * pr2 * pr3;
+			return resultaat;
+		}
+		
+
+		let uitkomst = product(3,4,5);
+		document.write(`<p>Het product is : ${uitkomst}</p>`);
+
+
+
+
+
+
+		function sorteerOmgekeerdJoin(ontvangenNamen) {
+    	return ontvangenNamen.sort().reverse().join("-");
+		}
+
+
+		let namen = ["Jan", "Piet", "Joris", "Paul", "Evi", "Sam", "Line"];
+		let namenAangepast = sorteerOmgekeerdJoin(namen);
+		document.write(`<p>De array omgedraaid gesorteerd en gejoined geeft: ${namenAangepast}<p/>`);
+
+
+
+	</script>
+	
+</body>
+</html>
