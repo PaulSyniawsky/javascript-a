@@ -3,18 +3,77 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Opdracht naamcontrole via een functie</title>
 </head>
 <body>
-	<script>
+	<script type="text/javascript">
 		"use strict";
 
 
+		let getallen=[];
+
+		let aantal = prompt('Hoeveel getallen wil u invoeren?');
+		aantal = controleAantal(aantal);
+
+		
+
+		function controleAantal(aantal) {
+			if(aantal == null) {
+				document.write('U hebt geannuleerd!');
+			}
+			
+			else if (aantal.length == 0) {
+				document.write ('U heeft niets ingegeven !');
+			}
+
+
+			else if (isNaN(aantal)) {
+				document.write('Dit is geen correcte ingave');
+				console.log(0); 
+			}
+
+
+			else {
+				return aantal
+//				return getallen=[aantal];
+			}
+
+		}
+
+
+		    for (let i = 1; i <= aantal; i++) {
+		        getallen.push(prompt(`Geef getal nr ${i} in.`));
+		    }
+		    
+		    		    document.write(getallen);
+		    for (let i = 1; i <= aantal; i++) {
+		        document.write(`${getal[i-1]}`);
+		    }
+
+
+
+		getal = controleGetal(getal);
+
+		function controleGetal(getal) {
+			if(getal == null, getal.length == 0, isNan(getal)) {
+				console.log(fout);
+			}
+
+		}
 
 
 
 
 
+		   
+
+
+    //document.write(`<p>${i}: ${getal[i-1]} </p>`);
+		
+
+
+		
+		
 
 
 
