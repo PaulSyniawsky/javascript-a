@@ -9,21 +9,19 @@
 	<script type="text/javascript">
 
 		let Email = prompt("Geef uw e-mail adres in aub");
+		Email = controleEmail(Email);
+
+	function controleEmail(Email) {
+		if(Email.search(/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,3}$/) ==0);
+			alert("uw Email adres is oke");
+
+		}
+		else {
+			alert("Uw Email adres is niet oke");
+		}
 	
 
 
-
-
-	function controleEmail(Email) {
-		if(Email.search(/^([\w]*)([A-Za-z0-9._?+]+@[A-Za-z0-9.-?+]+\.[.]{2,3}$/) ==0);
-		{
-			alert("uw Email adresis oke");
-
-		}
-			alert("Uw Email adres is niet oke")
-	}
-
-	Email = controleEmail(Email);
 
 	</script>
 	
@@ -31,7 +29,9 @@
 </html>
 
 
-Opdracht: RegEx
+
+
+<!-- Opdracht: RegEx
 Maak een functie die de email van de gebruiker opvraagt en vervolgens controleert. In de functie schrijf je ook in het document of de email voldoet of niet.
 
 Dit zijn de voorwaarden:
@@ -68,4 +68,4 @@ jan@mail.vlaanderen
 	{
 		console.log("Email is oke");
 		document.write("Email is oke");
-	}
+	} -->
